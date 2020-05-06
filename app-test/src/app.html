@@ -1,0 +1,24 @@
+<template>
+  <h1>${message}</h1>
+
+  <hr>
+  <h2>Custom element "hello-world"</h2>
+  <p>Usage:&nbsp;<code>&lt;hello-world message.bind="message"&gt;&lt;/hello-world&gt;</code></p>
+  <hello-world message.bind="message"></hello-world>
+
+  <hr>
+  <h2>Custom attribute "color"</h2>
+  <p>Usage:&nbsp;<code>&lt;p color="green"&gt;In green&lt;/p&gt;</code></p>
+  <p color="green">In green</p>
+
+  <hr>
+  <h2>Value Converter "upcase"</h2>
+  <p>Usage:&nbsp;<code>\${message | upcase}</code></p>
+  <p>${message | upcase}</p>
+
+  <hr>
+  <h2>Binding Behavior "primaryClick"</h2>
+  <p>Usage:&nbsp;<code>&lt;button click.trigger="clicked() & primaryClick"&gt;&lt;/button&gt;</code></p>
+  <button click.trigger="clicked() & primaryClick">Only triggers on a primary button click or a touch on mobile device</button>
+  
+</template>
